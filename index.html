@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS y JS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+    <title>Tienda Frutas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="nombre-fruteria">Frutería</span>
+            <div class="busqueda">
+                <span id="nombreCompleto">
+                    <!--span donde se cargara el nombre del alumno dinámicamente con JS -->
+                </span>
+                <label for="barraBusqueda"></label>
+                <input id="barraBusqueda" type="text">
+            </div>
+            <span id="carritoHeader">
+                <!--span donde se cargara carrito: x productos dinámicamente con JS -->
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="productos">
+            <div class="encabezado-productos">
+                <h2>Productos</h2>
+                <div id="contenedorBotones">
+                    <!-- Acá JS agregará los dos botones -->
+                </div>
+            </div>
+
+            <div id="contenedorFrutas">
+            <!-- Las frutas serán cargadas dinámicamente con JS -->
+            </div>
+        </section>
+
+        <section class="carrito">
+            <h2>Carrito</h2>
+            <div id="contenedorCarrito">
+                <!--Carrito cargado dinámicamente con JS-->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedorFooter">
+            <!--Footer dinámicamente con JS (total y vaciar todos los porductos)-->
+        </div>
+    </footer>
+</body>
+</html>

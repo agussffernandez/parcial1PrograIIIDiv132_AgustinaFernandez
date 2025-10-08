@@ -1,0 +1,189 @@
+/*===============================
+    CONFIGURACIONES GENERALES
+================================*/
+
+:root {
+    --color-fondo-body: #f5f5f5;
+    --color-fondo-header: #4bc214;
+    --color-letra-blanco: #ffffff;
+    --color-fondo-productos: #ffffff;
+    --color-boton-eliminar: #e03434;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* espacio entre header, main y footer */
+    margin: 0; 
+    background-color: var(--color-fondo-body);
+}
+
+
+/*==========
+    HEADER
+===========*/
+header {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo-header);
+    color: var(--color-letra-blanco);
+    font-weight:500;
+}
+
+nav {
+    width: 100%; /*nav ocupa todo el ancho del header*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre-fruteria {
+    width: 20%;
+    padding-left: 8px;
+}
+
+/* barra busqueda*/
+.busqueda {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#carritoHeader {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+}
+
+/*===========
+    MAIN
+===========*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*-----------------------
+    SECCION PRODUCTOS
+-----------------------*/
+
+.productos {
+    background-color: var(--color-fondo-productos);
+}
+
+.encabezado-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* contenedor de frutas y sus trajetas*/
+#contenedorFrutas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 20px;
+}
+
+.card-producto {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* imágenes */
+.card-producto img {
+    width: 80px;
+    height: 80px;
+}
+
+/*-----------------------
+    SECCION CARRITO
+-----------------------*/
+
+.carrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorCarrito {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+}
+
+.bloque-item {
+    list-style: none; /* quita los puntitos */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+/*===========
+    FOOTER
+===========*/
+
+.contenedorFooter {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*=============
+    GENERALES
+=============*/
+
+/*-------------------
+    MAIN y FOOTER
+--------------------*/
+main, footer {
+    padding: 10px;
+}
+
+
+/*---------------
+    BOTONES
+----------------*/
+
+.boton-eliminar {
+    background-color: var(--color-boton-eliminar);
+    border: 5px solid #720000; 
+    color: var(--color-letra-blanco);
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    height: 30px;
+}
+
+button:hover {
+    opacity: 0.8; /* efecto sutil de transparencia */
+    cursor: pointer;
+    transform: scale(1.03); /* los agranda un poquito */
+}
