@@ -77,6 +77,7 @@ main {
 
 .productos {
     background-color: var(--color-fondo-productos);
+    border-radius: 10px;
 }
 
 .encabezado-productos {
@@ -111,6 +112,19 @@ main {
 .card-producto img {
     width: 80px;
     height: 80px;
+}
+
+.card-producto h2,
+.card-producto p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.boton-agregar-carrito {
+    background-color: var(--color-fondo-header);
+    color: var(--color-letra-blanco);
+    border: none;
+    border-radius: 8px;
 }
 
 /*-----------------------

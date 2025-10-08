@@ -84,7 +84,7 @@ function mostrarFrutas(arrayFrutas) {
             <img src="${fruta.ruta_img}" alt="${fruta.nombre}">
             <h3>${fruta.nombre}</h3>
             <p>$${fruta.precio}</p>
-            <button onclick="agregarACarrito(${fruta.id})">Agregar al carrito</button>
+            <button onclick="agregarACarrito(${fruta.id})" class="boton-agregar-carrito">Agregar al carrito</button>
         </div>
         `;
     });
