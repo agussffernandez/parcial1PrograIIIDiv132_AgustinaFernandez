@@ -50,9 +50,13 @@ nav {
 .busqueda {
     width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
+}
+
+.busqueda span {
+    padding-left: 150px;
 }
 
 #carritoHeader {
