@@ -12,6 +12,7 @@ El proyecto incluye:
   - Agregado y visualización de productos.
   - Filtrado y búsqueda de productos.
   - Manipulación del DOM para mostrar información dinámica.
+  - Persistencia de datos en localStorage, permitiendo que los productos agregados se mantengan al recargar la página.
 - **Estilos CSS** con flexbox 
 
 ## Tecnologías utilizadas
